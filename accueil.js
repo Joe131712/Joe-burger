@@ -2,7 +2,7 @@
 document.querySelectorAll(".cls-1, .cls-2").forEach((svg) => {
   svg.addEventListener("click", () => {
     const isFavori = svg.style.fill === "goldenrod";
-    svg.style.fill = isFavori ? "#cfbcdf" : "goldenrod";
+    svg.style.fill = isFavori ? "#1e847f" : "goldenrod";
 
     // Déterminer le bon conteneur parent
     
@@ -25,8 +25,8 @@ document.querySelectorAll(".cls-1, .cls-2").forEach((svg) => {
         
 
         favBlock.innerHTML = `
-          <img src="${imgSrc}" style="width:150px;height:100px;margin-left:0;object-fit:cover; border:1px solid goldenrod;border-radius:5px"/>
-          <span style="margin-left: 0px;font-size:30px;font-family:'Aguafina Script';color:#cfbcdf">${title}</span>
+          <img src="${imgSrc}" style="width:150px;height:100px;margin-left:0;object-fit:cover; border:1px solid #1e847f;border-radius:5px"/>
+          <span style="margin-left: 0px;font-size:30px;font-family:'Aguafina Script';color:black">${title}</span>
           <span style="margin-left:auto;font-size:28px;color:goldenrod">${prix}</span>
         `;
         favContainer.appendChild(favBlock);
